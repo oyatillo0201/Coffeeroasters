@@ -46,3 +46,40 @@ img {
 }
 
 /* SITE-HEADER */
+.site-header {
+  background-image: url(../img/site-header-bg.jpg);
+  background-repeat: no-repeat;
+}
+.site-header-container {
+
+}
+
+.site-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.site-navigation {
+  display: flex;
+
+}
+.sitenav-list {
+  display: flex;
+ list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav-item {
+}
+.site-header-info {
+}
+.site-header-info-heading {
+}
+.site-header-info-text {
+}
+.site-header-info-link {
+}
