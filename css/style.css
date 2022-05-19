@@ -1,3 +1,29 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+      url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"),
+      url("../fonts/roboto-v30-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+      url("../fonts/roboto-v30-latin-700.woff") format("woff");
+}
+
 /* GLOBAL */
 html {
   height: 100%;
@@ -31,14 +57,13 @@ img {
 
 /* CONTAINER */
 .container {
+  max-width: 1440px;
   width: 100%;
-  max-width: 1400px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* MAIN-CONTENT */
 .main-content {
@@ -46,40 +71,103 @@ img {
 }
 
 /* SITE-HEADER */
-.site-header {
+.global-wrapper {
   background-image: url(../img/site-header-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .site-header-container {
-
-}
-
-.site-header-content {
+  padding: 40px 50px 40px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-.site-navigation {
-  display: flex;
 
+.site-header-logo-img {
+  width: 203px;
+  margin-right: 20px;
 }
+
 .sitenav-list {
   display: flex;
- list-style: none;
+  list-style: none;
 }
 
 .sitenav-item:not(:last-child) {
   margin-right: 40px;
 }
 
-.sitenav-item {
+.sitenav-link {
+  font-weight: 700;
+  line-height: 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
 }
+
+
+/* HERO */
+.site-hero-container {
+  display: flex;
+}
+
 .site-header-info {
+  max-width: 534px;
+  width: 100%;
+  margin: 0;
+  margin-top: 100px;
+  margin-right: 116px;
+  padding: 0;
+  padding-left: 100px;
+
 }
+
 .site-header-info-heading {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000;
 }
+
 .site-header-info-text {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
 }
+
 .site-header-info-link {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  border: 1px solid #0A775F;
+  border-radius: 100px;
+  background-color: #0A775F;
+  color: #fff;
+  display: inline-block;
+  padding: 16px 24px;
+  text-decoration: none;
+}
+
+.site-hero-img{
+  display: block;
+  margin-right: auto;
+  margin: 0;
+  padding: ;
+}
+
+.site-hero-imgs {
+  margin: 0;
+  padding: 0;
 }

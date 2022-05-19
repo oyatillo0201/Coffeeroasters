@@ -6,33 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cofeeroaster</title>
 
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<div class="global-wrapper">
+  <!-- SITE-HEADER -->
   <header class="site-header">
     <div class="site-header-container container">
-      <div class="site-header-content">
-        <a href="#">
-          <img src="img/site-logo.svg" alt="logo" width="203" height="24">
-        </a>
-        <nav class="site-navigation">
-          <ul class="sitenav-list">
-            <li class="sitenav-item">Home</li>
-            <li class="sitenav-item">About us</li>
-            <li class="sitenav-item">Create your plan</li>
-          </ul>
-        </nav>
-      </div>
+      <a class="site-header-logo" href="#">
+        <img class="site-header-logo-img" src="img/site-logo.svg" alt="logo" width="203" height="24">
+      </a>
+      <nav class="sitenav">
+        <ul class="sitenav-list">
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Home</a> </li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">About us</a> </li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Create your plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="site-hero">
+    <div class="site-hero-container container">
       <div class="site-header-info">
         <h2 class="site-header-info-heading">Good coffee
           is made simply.</h2>
           <p class="site-header-info-text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
           <a class="site-header-info-link" href="#">Create your plan</a>
       </div>
+      <div class="site-hero-imgs">
+        <img class="site-hero-img" src="img/site-header-coffee.jpg" alt="Coffee" width="710" height="698" srcset="img/site-header-coffee.jpg 1x, img/site-header-coffee@2x.jpg 2x">
+      </div>
     </div>
-  </header>
+  </div>
+</div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
