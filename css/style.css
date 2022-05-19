@@ -72,6 +72,7 @@ img {
 
 /* SITE-HEADER */
 .global-wrapper {
+  background-color: #f1d2ae;
   background-image: url(../img/site-header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
