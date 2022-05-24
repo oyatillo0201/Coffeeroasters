@@ -1,5 +1,12 @@
-/* FONTS */
+/* CUSTOM PROPS */
+:root {
+  --text-color: #333;
+  --accent-color-green: #0a775f;
+  --outline-color: var(--accent-color-green);
+}
 
+
+/* FONTS */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -45,14 +52,19 @@ body {
   margin: 0;
   font-family: "Roboto","Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.75;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+*:focus {
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
 }
 
 /* CONTAINER */
@@ -70,28 +82,53 @@ img {
   flex-grow: 1;
 }
 
-/* SITE-HEADER */
-.global-wrapper {
+/* SITE-HEADER-INTRO-WRAPER */
+.site-header-hero-wrapper {
   background-color: #f1d2ae;
   background-image: url(../img/site-header-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .site-header-container {
-  padding: 40px 50px 40px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.site-header-logo-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.site-header-logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-header-logo-link:active {
+  opacity: 0.6;
 }
 
 .site-header-logo-img {
-  width: 203px;
+  width: 233px;
+  height: 24px;
+  object-fit: contain;
   margin-right: 20px;
 }
 
+
+/* SITENAV */
 .sitenav-list {
   display: flex;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -100,14 +137,22 @@ img {
 }
 
 .sitenav-link {
+  display: block;
   font-weight: 700;
   line-height: 14px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #333333;
   text-decoration: none;
+  color: var(--text-color);
 }
 
+.sitenav-link:hover {
+  color: var(--accent-color-green);
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
+}
 
 /* HERO */
 .site-hero-container {
