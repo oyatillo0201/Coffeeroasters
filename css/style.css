@@ -8,6 +8,7 @@
   --accent-color-light-brown-80: rgba(201, 155, 103, 0.8);
   --accent-color-light-brown-60: rgba(201, 155, 103, 0.6);
   --light-brown: #f3d7b7;
+  --light-bg: #f8f8f2;
   --outline-color: var(--accent-color-green);
 }
 
@@ -130,6 +131,8 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /* SITE-HEADER-INTRO-WRAPER */
@@ -254,79 +257,77 @@ img {
 }
 
 
-/* MAIN-CONTENT */
-.main-content {
-  margin-top: 20px;
+/* INDEX-COLLECTION */
+.index-collection-inner {
+  padding: 50px 143px;
+  background-color: var(--light-bg);
+  background-image: url("../img/acti  on-bg.png");
 }
 
-.main-container {
-  max-width: 1400px;
-}
-
-.main-global-wrapper {
-  background-image: url(../img/action-bg.jpg);
-  background-color: #f6f6ee;
-  background-blend-mode: overlay;
-}
-
-
-.main-content-heading {
-  padding: 0;
-  margin: 0;
+.index-collection-heading {
+  margin-top: 0;
   margin-bottom: 80px;
-  margin-top: 50px;
-  font-weight: 700;
   font-size: 50px;
-  line-height: 59px;
+  line-height: normal;
   text-align: center;
   text-transform: uppercase;
   color: #000;
 }
 
-.action {
-  width: 1114px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.index-collection-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.action-card {
+.index-collection-item {
   display: flex;
   align-items: center;
 }
 
-.action-card-img {
-  /* margin-right: 117px; */
-  width: 450px;
-  height: 375px;
-}
-
-.action-card-info {
-  width: 453px;
-  margin-left: 117px;
-  margin-right: 117px;
-}
-
-.action-card:nth-child(2n) {
-  display: flex;
+.index-collection-item:nth-child(even){
   flex-direction: row-reverse;
 }
 
-.action-card-heading {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 56px;
+.index-collection-img {
+  flex-shrink: 0;
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
 }
-.action-card-text {
-  padding: 0;
+
+.index-collection-info {
+  flex-grow: 1;
+  padding-left: 117px;
+  padding-right: 117px;
+}
+
+.index-collection-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 48px;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.index-collection-text {
   margin: 0;
   font-size: 22px;
   line-height: 34px;
 }
+
+/* .index-collection-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.index-collection-item:nth-child(odd) .index-collection-info {
+  padding-left: 117px;
+} */
+
+
+
+
 
 
 /* WHY CHOOSE US */
