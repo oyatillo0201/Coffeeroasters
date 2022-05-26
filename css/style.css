@@ -339,7 +339,7 @@ img {
 
 .index-features-inner {
   padding: 50px 30px;
-  background-color: #c18b57;
+  background-color: #fff;
   background-image: url("../img/index-features-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 700px;
@@ -394,11 +394,13 @@ img {
   line-height: normal;
   font-weight: 500;
   text-transform: uppercase;
+  
 }
 .index-features-item-text {
   margin: 0;
   font-size: 18px;
   line-height: 28px;
+  
 }
 
 
@@ -491,6 +493,7 @@ img {
   padding-bottom: 65px;
   background-color: var(--light-brown);
   background-image: url("../img/site-header-bg.jpg");
+  background-size: contain;
 }
 
 .site-footer-container {
