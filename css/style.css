@@ -127,7 +127,6 @@ img {
 }
 
 
-
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
@@ -199,6 +198,11 @@ img {
   text-decoration: none;
   color: var(--text-color);
   white-space: nowrap;
+}
+
+.sitenav-medium-font .sitenav-link {
+  font-size: 16px;
+  line-height: normal;
 }
 
 .sitenav-link:hover {
@@ -416,7 +420,6 @@ img {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .how-it-works-list {
@@ -484,73 +487,61 @@ img {
 
 
 /* SITE-FOOTER */
-.site-footer-content {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  padding: 65px 50px;
-  background-color: #f2d3b0;
-  background-image: url(../img/site-footer-bg.png);
-
+.site-footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: var(--light-brown);
+  background-image: url(../img/site-header-bg.jpg);
 }
 
-.site-footer-logo {
-  width: 203px;
-  margin-right: 20px;
-}
-
-.sitenav-footer {
+.site-footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.sitenav-footer-list {
+.site-footer-logo {
+  display: flex;
+}
+
+.site-footer-logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-footer-logo-link:active {
+  opacity: 0.6;
+}
+
+.site-footer-logo-img {
+  flex-shrink: 0;
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+/* SOCIALS */
+.socials-list {
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
   list-style: none;
-  margin-left: 246px;
-
 }
 
-.sitenav-footer-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.sitenav-footer-link {
-  text-decoration: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.site-footer-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  list-style: none;
-  margin-left: 31px;
-}
-
-.site-footer-item:not(:last-child) {
+.socials-item:not(:last-child) {
   margin-right: 30px;
-
 }
 
-
-.site-footer-link {
-
+.socials-link {
+  display: flex;
+  color: #333;
 }
 
-.site-footer-icon {
-  display: block;
-  width: 30px;
-  height: 30px;
+.socials-link:hover {
+  color: var(--accent-color-green);
+}
 
+.socials-link:active {
+  opacity: 0.6;
 }
