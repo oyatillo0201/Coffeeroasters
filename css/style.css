@@ -592,10 +592,6 @@ only screen and (                min-resolution: 2dppx) {
 
 
 /* INDEX-COMMITMENT */
-.index-index-commitent {
-
-}
-
 .index-commitment-inner {
   display: flex;
   align-items: center;
@@ -636,6 +632,7 @@ only screen and (                min-resolution: 2dppx) {
 /* UNCOMPROMISING QUALITY */
 .about-us-features {
   margin-top: 160px;
+  margin-bottom: 20px;
 }
 
 .about-us-features-inner {
@@ -682,4 +679,91 @@ only screen and (                min-resolution: 2dppx) {
     height: 500px;
     margin-top: -80px;
     margin-bottom: 90px;
+  }
+
+
+
+  /* HOW-IT-WORKS */
+.our-headquarters-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+  list-style: none;
+  margin-right: -20px;
+  text-align: left;
+}
+
+.our-headquarters-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+}
+
+.our-headquarters-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px;
+  background-color: var(--light-bg);
+}
+
+  .info-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .info-item {
+  }
+
+  .united-kingdom::before {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 123px;
+    background-image: url("../img/united-kingdom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    align-self: flex-end;
+    margin-top: 45px;
+    margin-right: 55px;
+  }
+  .canada::before {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 123px;
+    background-image: url("../img/canada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    align-self: flex-end;
+    margin-top: 45px;
+    margin-right: 55px;
+  }
+  .australia::before {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 123px;
+    background-image: url("../img/australia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    align-self: flex-end;
+    margin-top: 45px;
+    margin-right: 55px;
+  }
+
+  .canada {
+
+  }
+
+  .australia {
+
   }
