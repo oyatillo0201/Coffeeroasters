@@ -57,6 +57,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: "Roboto","Arial", sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -249,6 +250,18 @@ img {
   margin-bottom: 34px;
 }
 
+.hero-img-wrapper {
+  position: relative;
+}
+
+.hero-badge {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
 .hero-img {
   width: 710px;
   height: 596px;
@@ -266,6 +279,7 @@ img {
 }
 
 .index-collection-inner {
+  position: relative;
   padding: 50px 143px;
   background-color: var(--light-bg);
   background-image: url("../img/index-collection.jpg");
@@ -324,13 +338,25 @@ img {
   line-height: 34px;
 }
 
-/* .index-collection-item:not(:last-child) {
-  margin-bottom: 10px;
+.index-collection-leaves-left {
+  position: absolute;
+  top: 40px;
+  left: -150px;
 }
 
-.index-collection-item:nth-child(odd) .index-collection-info {
-  padding-left: 117px;
-} */
+.index-collection-leaves-right {
+  position: absolute;
+  right: -350px;
+  top: 685px;
+}
+
+.index-collection-leaves-left-light {
+  position: absolute;
+  bottom: 170px;
+  left: -216px;
+}
+
+
 
 /* INDEX-FEATURES */
 .index-features {
@@ -406,6 +432,7 @@ img {
 
 /* HOW-IT-WORKS */
 .how-it-works-inner {
+  position: relative;
   padding: 50px 30px;
   background-color: var(--accent-color-green);
   background-image: url("../img/how-it-works-bg.jpg");
@@ -435,6 +462,7 @@ img {
 }
 
 .how-it-works-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: calc(100% / 3 - 20px);
@@ -442,7 +470,21 @@ img {
   counter-increment: how-it-works;
 }
 
+.how-it-works-item:not(:last-child):after {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  content: "";
+  width: 433px;
+  height: 3px;
+  background-image: url("../img/brown-dashed-strocke.svg");
+  background-repeat: no-repeat;
+}
+
+
 .how-it-works-item::before {
+  position: relative;
+  z-index: 2;
   content: "";
   width: 60px;
   height: 60px;
@@ -486,6 +528,11 @@ img {
   outline-color: var(--accent-color-light-brown);
 }
 
+.how-it-works-sticker {
+  position: absolute;
+  top: 41px;
+  right: 68px;
+}
 
 /* SITE-FOOTER */
 .site-footer {
@@ -583,6 +630,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .text-hero {
+  width: 372px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -760,10 +808,159 @@ only screen and (                min-resolution: 2dppx) {
     margin-right: 55px;
   }
 
-  .canada {
+
+
+  /* CREAT-PLAN */
+
+
+
+  /* How do you drink your coffee? */
+  .promo {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .promo-content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .advice {
+
+  }
+  .advice-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  .advice-item {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    font-variant: small-caps;
+    color: #555555;
+    text-transform: uppercase;
+  }
+
+  .advice-item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .advice-item:last-child {
+    border-bottom: 3px dashed #C99B67;
+  }
+
+
+
+  /* Radio */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .global-wrapper-services {
+    display: flex;
+    flex-direction: column;
 
   }
 
-  .australia {
+  .services:not(:last-child) {
+    margin-bottom: 60px;
+  }
 
+  .box-title {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .servieces-heading {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    margin-right: 55px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    font-variant: small-caps;
+    color: #000000;
+  }
+
+  .services-icon {
+    display: flex;
+    width: 18px;
+    height: 11px;
+    object-fit: cover;
+  }
+
+  .filter {
+    display: flex;
+  }
+
+  .form-label {
+    display: flex;
+    width: 208px;
+    margin-right: 18px;
+
+  }
+
+  .filter-content {
+    display: block;
+    background-color: #c6dbd0;
+    padding: 30px 16px;
+  }
+
+  .filter-content-title {
+    display: block;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    font-variant: small-caps;
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  .filter-content-text {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  .filter .form-label input:checked ~ .filter-content {
+    background-color: #0A775F;
+    color: #fff;
+  }
+
+  .button-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+
+  .services-icons {
+    display: inline-block;
+    background-image: url(../img/services-icon.svg);
+    background-repeat: no-repeat;
+    padding: 20px;
   }
